@@ -1,0 +1,104 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('../../../public/herobg.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  text-align: left;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(1, 59, 1, 0.7), rgba(0, 128, 0, 0.1));
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.tagline {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid yellow;
+  font-size: 1rem;
+  /* font-weight: bold; */
+  margin-bottom: 20px;
+  color: yellow;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.primaryButton,
+.secondaryButton {
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.primaryButton {
+  background: #28a745;
+  color: white;
+}
+
+.primaryButton:hover {
+  background: #218838;
+}
+
+.secondaryButton {
+  background: transparent;
+  color: yellow;
+  border: 2px solid yellow;
+}
+
+.secondaryButton:hover {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
