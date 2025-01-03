@@ -1,0 +1,155 @@
+.blogSection {
+    padding: 6rem 0;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.sectionTitle {
+    font-size: 2.5rem;
+    color: #083a01;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.sectionSubtitle {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.blogGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.blogCard {
+    text-decoration: none;
+    color: inherit;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    height: 400px;
+}
+/* Target first blog card */
+.blogCard:first-child {
+    grid-column: 1;
+    grid-row: span 2;
+    /* width: 500px; */
+    height: calc(800px + 1.5rem); 
+}
+
+/* Target remaining blog cards */
+.blogCard:not(:first-child) {
+    grid-column: auto;
+    height: 400px;
+}
+
+.blogCard:hover {
+    transform: translateY(-5px);
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(
+        to top,
+        rgba(3, 61, 1, 1) 0%,
+        rgba(3, 61, 1, 0.9) 50%,
+        rgba(3, 61, 1, 0) 100%
+    );
+    color: white;
+}
+
+.tags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.tag {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    backdrop-filter: blur(4px);
+    border: 1px solid yellow;
+    color: yellow;
+}
+
+.date {
+    font-size: 0.875rem;
+    color: yellow;
+}
+
+.title {
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.title:hover{
+    color: yellow;
+}
+
+@media (max-width: 1024px) {
+    .blogGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .blogCard:first-child {
+        grid-column: 1;
+        grid-row: span 1;
+        height: 400px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .blogGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .blogCard {
+        height: 350px;
+    }
+}
+
+@media (max-width: 640px) {
+    .blogGrid {
+        grid-template-columns: 1fr;
+    }
+    
+    .blogCard,
+    .blogCard:first-child {
+        height: 300px;
+    }
+}

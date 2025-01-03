@@ -4,12 +4,14 @@ import styles from './services.module.css';
 export default function Services() {
   return (
     <section className={styles.servicesSection}>
+      <span className={styles.tag2}>Our Services</span>
       <h2 className={styles.heading}>We Offer Eco & Environmental Services</h2>
       <div className={styles.servicesContainer}>
         <div className={styles.serviceCard}>
           <Image src="/reforestation.jpg" alt="Tree Planting" width={400} height={250} className={styles.image}/>
           <span className={styles.tag}>Reforestation</span>
           <h3 className={styles.title}>Tree Planting Events</h3>
+          
           <p>Hands-on tree planting events to restore natural habitats and enhance green spaces.</p>
         </div>
         <div className={styles.serviceCard}>

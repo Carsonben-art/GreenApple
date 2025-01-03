@@ -1,0 +1,157 @@
+/* CoreValues.module.css */
+.section {
+    padding: 80px 0;
+    background-color: #ffffff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .header {
+    text-align: left;
+    margin-bottom: 60px;
+  }
+  
+  .tag {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid #1B5B31;
+    border-radius: 25px;
+    color: #1B5B31;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 42px;
+    color: #1B5B31;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .content {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+  }
+  
+  .imageContainer {
+    flex: 0 0 45%;
+    position: relative;
+    height: 600px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .image {
+    object-fit: cover;
+  }
+  
+  .valuesList {
+    flex: 0 0 50%;
+  }
+  
+  .valueItem {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: flex-start;
+    border-bottom: 0.5px solid #1b5b31ad;
+  }
+  .valueItem:last-child{
+    border-bottom: none;
+  }
+  
+  .number {
+    font-size: 48px;
+    color: #1B5B31;
+    font-weight: bold;
+    margin-right: 24px;
+    line-height: 1;
+    min-width: 70px;
+  }
+  
+  .valueContent {
+    flex: 1;
+  }
+  
+  .valueTitle {
+    font-size: 24px;
+    color: #1B5B31;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  
+  .valueDescription {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .content {
+      gap: 40px;
+    }
+  
+    .imageContainer {
+      height: 500px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+  
+    .imageContainer {
+      width: 100%;
+      height: 400px;
+      margin-bottom: 40px;
+    }
+  
+    .valuesList {
+      width: 100%;
+    }
+  
+    .title {
+      font-size: 32px;
+    }
+  
+    .number {
+      font-size: 36px;
+      min-width: 50px;
+    }
+  
+    .valueTitle {
+      font-size: 20px;
+    }
+  
+    .valueDescription {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section {
+      padding: 40px 0;
+    }
+  
+    .imageContainer {
+      height: 300px;
+    }
+  
+    .title {
+      font-size: 28px;
+    }
+  
+    .valueItem {
+      flex-direction: column;
+    }
+  
+    .number {
+      margin-bottom: 12px;
+    }
+  }
