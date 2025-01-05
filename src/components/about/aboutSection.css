@@ -113,5 +113,6 @@
     }
     .about-header{
       flex-direction: column;
+      gap: 20px;
     }
   }
