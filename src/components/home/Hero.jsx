@@ -13,10 +13,10 @@ const Hero = () => {
         We’ve been leading re-greening initiatives, clean-up campaigns, and environmental education programs. Together, we can create a cleaner, healthier, and greener future for all.
         </p>
         <div className={styles.buttons}>
-          <a href="#discover" className={styles.primaryButton}>
+          <a href="/about" className={styles.primaryButton}>
             Discover More
           </a>
-          <a href="#services" className={styles.secondaryButton}>
+          <a href="/services" className={styles.secondaryButton}>
             See All Services
           </a>
         </div>

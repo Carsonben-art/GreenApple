@@ -7,25 +7,20 @@ export default function ReviewSection() {
     <section className="review-section">
       <div className="left-content">
         <div className="avatars">
-          <Image src={seedling} className='image' alt="Client avatars" width={60} height={60} />
+          <Image src={seedling} className='image' alt="Client avatars" width={150} height={150} />
         </div>
-        <h2>100K+ Client With <br/> Positive Reviews</h2>
+        <h2>40K+ Trees Planted <br/> Since 2023</h2>
       </div>
       
       <div className="center-content">
-        <div className="badge">
-          <span>Vegetables</span>
-          <span>Agro</span>
-          <span>Organic</span>
-          <span>Farming</span>
-        </div>
+        <Image src="/icon.png" className="icon" alt='icon' width={200} height={200} />
       </div>
       
       <div className="right-content">
         <div className="video-thumbnail">
           <Image src={planting} className='image' alt="Video preview" width={250} height={150} />
         </div>
-        <h2>Healthy Life With Fresh Products</h2>
+        <h2>Healthy Life With clean Environment</h2>
       </div>
     </section>
   );

@@ -20,17 +20,28 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
+    flex-wrap: wrap;
   }
-  .left-content .image{
-    border-radius: 50%;
-    border: 5px solid #ffffff;
+
+  .icon {
+    animation: rotate 10s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
   .right-content {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    gap: 10px;
   }
   .right-content .image{
     border-radius: 20px;
@@ -80,6 +91,10 @@
     
     .left-content, .right-content {
       margin-bottom: 20px;
+      flex-direction: column;
+    }
+    .right-content{
+      flex-direction: column-reverse;
     }
   
     h2 {

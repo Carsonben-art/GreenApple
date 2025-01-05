@@ -4,13 +4,13 @@ import Image from 'next/image';
 
 const TeamSection = () => {
   const teamMembers = [
-    { id: 1, name: 'Gabriel', role: 'Lead Farmer', image: '/user.png' },
-    { id: 2, name: 'Davis', role: 'Head of Agricultural Innovation', image: '/user.png' },
-    { id: 3, name: 'Grace', role: 'Food Farmer', image: '/user.png' },
-    { id: 4, name: 'Arshley', role: 'Environment Activist', image: '/user.png' },
-    { id: 5, name: 'Betty', role: 'Agricultural Specialist', image: '/user.png' },
-    { id: 6, name: 'Reagan', role: 'Farm Manager', image: '/user.png' },
-    { id: 7, name: 'Ben', role: 'Produce Coordinator', image: '/user.png' },
+    { id: 1, name: 'Gabriel', role: 'Assistant Chair', image: '/user.png' },
+    { id: 2, name: 'Davis', role: 'Secretary', image: '/user.png' },
+    { id: 3, name: 'Grace', role: 'Member', image: '/user.png' },
+    { id: 4, name: 'Arshley', role: 'Chair', image: '/user.png' },
+    { id: 5, name: 'Betty', role: 'Member', image: '/user.png' },
+    { id: 6, name: 'Reagan', role: 'Head Technician, Treasurer', image: '/user.png' },
+    { id: 7, name: 'Ben', role: 'Assistant Technician', image: '/user.png' },
   ];
 
   return (
@@ -35,7 +35,7 @@ const TeamSection = () => {
                 />
               </div>
               <h3 className={styles.memberName}>{member.name}</h3>
-              {/* <p className={styles.memberRole}>{member.role}</p> */}
+              <p className={styles.memberRole}>{member.role}</p>
             </div>
           ))}
         </div>

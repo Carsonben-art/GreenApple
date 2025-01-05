@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './services.module.css';
 
-export default function Services() {
+export default function ServicesSection() {
   return (
     <section className={styles.servicesSection}>
       <span className={styles.tag2}>Our Services</span>

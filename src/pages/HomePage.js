@@ -6,7 +6,8 @@ import CoreValues from '@/components/home/CoreValues'
 import Hero from '@/components/home/Hero'
 import ProjectsSection from '@/components/home/ProjectsSection'
 import ReviewSection from '@/components/home/ReviewSection'
-import Services from '@/components/home/Services'
+import ServicesSection from '@/components/home/Services'
+
 import TeamSection from '@/components/home/TeamSection'
 import React from 'react'
 
@@ -15,7 +16,7 @@ const HomePage = () => {
     <div>
       <Hero />
       <ReviewSection />
-      <Services />
+      <ServicesSection />
       <About />
       <ProjectsSection />
       <CoreValues />
