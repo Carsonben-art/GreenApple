@@ -1,0 +1,109 @@
+.review-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background: 
+      linear-gradient(45deg, rgba(255, 213, 2, 0.918), rgba(255, 213, 2, 0.918)), 
+      url('../../../public/pattern.png');
+    background-size: cover;
+    color: #000000;
+    text-align: center;
+}
+  
+  
+  .left-content, .right-content {
+    flex: 1;
+  }
+  .left-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    flex-wrap: wrap;
+  }
+
+  .icon {
+    animation: rotate 10s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .right-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .right-content .image{
+    border-radius: 20px;
+    border: 4px solid green;
+  }
+  
+  .center-content {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .avatars {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .badge {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #4caf50;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .video-thumbnail {
+    margin: 10px auto;
+  }
+  
+  h2 {
+    margin: 15px 0;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    .review-section {
+      flex-direction: column;
+      padding: 30px;
+    }
+    
+    .left-content, .right-content {
+      margin-bottom: 20px;
+      flex-direction: column;
+    }
+    .right-content{
+      flex-direction: column-reverse;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
+  
+    .badge {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  

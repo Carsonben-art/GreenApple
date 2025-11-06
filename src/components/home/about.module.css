@@ -1,0 +1,86 @@
+.about-section {
+    padding: 2rem;
+    background-color: #1a3d1a; /* Dark green background */
+    color: #fff;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .about-image {
+    position: relative;
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .experience-badge {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #ffc107; /* Yellow background */
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .about-content {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-feature .icon {
+    font-size: 2rem;
+    color: #ffc107; /* Yellow color for icons */
+  }
+  
+  .about-feature h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-feature p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+    }
+  
+    .about-content h2 {
+      font-size: 1.75rem;
+    }
+  
+    .about-feature h3 {
+      font-size: 1.1rem;
+    }
+  
+    .about-feature p {
+      font-size: 0.9rem;
+    }
+  }

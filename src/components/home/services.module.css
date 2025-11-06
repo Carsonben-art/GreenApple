@@ -1,0 +1,76 @@
+/* Services.module.css */
+.servicesSection {
+    /* text-align: center; */
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+  }
+  .tag2{
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 1px solid #083a01;
+    color: #083a01;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 20px;
+  }
+  .heading {
+    font-size: 2.5rem;
+    color: #083a01;
+    margin-bottom: 3rem;
+  }
+  
+  .servicesContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .serviceCard {
+    background: #083a01;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .serviceCard:hover {
+    transform: translateY(-10px);
+  }
+  
+  .image {
+    width: 90%;
+    height: 300px;
+    border-radius: 14px;
+  }
+  
+  .tag {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 1px solid yellow;
+    color: yellow;
+    font-size: 0.875rem;
+    border-radius: 20px;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: yellow;
+  }
+  
+  .p {
+    color: #fff;
+    font-size: 1rem;
+    padding: 0 1.5rem 2rem;
+  }
